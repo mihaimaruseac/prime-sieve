@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="powerhouse" name="ro.lazcatluc.lambda.streams.IStreamTest" skipped="0" tests="5" time="0.155" timestamp="2013-08-06T23:12:09">
+  <properties>
+    <property name="jnlp.mixed.code" value="default" />
+    <property name="libs.MySQLDriver.classpath" value="D:\Java\netbeans 8\ide\modules\ext\mysql-connector-java-5.1.23-bin.jar" />
+    <property name="netbeans.dirs" value="D:\Java\netbeans 8\nb;D:\Java\netbeans 8\ergonomics;D:\Java\netbeans 8\ide;D:\Java\netbeans 8\extide;D:\Java\netbeans 8\java;D:\Java\netbeans 8\apisupport;D:\Java\netbeans 8\webcommon;D:\Java\netbeans 8\websvccommon;D:\Java\netbeans 8\enterprise;D:\Java\netbeans 8\mobility;D:\Java\netbeans 8\profiler;D:\Java\netbeans 8\python;D:\Java\netbeans 8\php;D:\Java\netbeans 8\identity;D:\Java\netbeans 8\harness;D:\Java\netbeans 8\cnd;D:\Java\netbeans 8\dlight;D:\Java\netbeans 8\groovy;D:\Java\netbeans 8\extra;D:\Java\netbeans 8\javacard;D:\Java\netbeans 8\javafx" />
+    <property name="javac.deprecation" value="false" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ro.lazcatluc.lambda.streams.IStreamTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\NetBeans projects\LambdaStreams\build\test\results\TEST-ro.lazcatluc.lambda.streams.IStreamTest.xml crashfile=D:\NetBeans projects\LambdaStreams\build\junitvmwatcher8025447765079177259.properties propsfile=D:\NetBeans projects\LambdaStreams\build\junit6678519862562560757.properties" />
+    <property name="testng.mode" value="testng" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="libs.Comet-GlassFish-v3.src" value="" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.JAXB-ENDORSED.javadoc" value="" />
+    <property name="libs.eclipselinkmodelgen.src" value="" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="application.vendor" value="Catalin" />
+    <property name="libs.Comet-GlassFish-v3.javadoc" value="" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="jnlp.offline-allowed" value="false" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="build.dir" value="build" />
+    <property name="java.endorsed.dirs" value="D:\Java\jdk1.8.0\jre\lib\endorsed" />
+    <property name="nb.junit.single" value="false" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="ant.file.LambdaStreams-impl" value="D:\NetBeans projects\LambdaStreams\nbproject\build-impl.xml" />
+    <property name="jnlp.signed" value="false" />
+    <property name="netbeans.buildnumber" value="jdk8lambda-1693-on-20130328" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="javadoc.private" value="false" />
+    <property name="javac.source" value="1.8" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="libs.junit.classpath" value="D:/NetBeans projects/LambdaStreams/lib/junit/junit-3.8.2.jar" />
+    <property name="file.separator" value="\" />
+    <property name="java.library.path" value="D:\Java\jdk1.8.0\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\oracle\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Trend Micro\AMSP;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Calibre2\;d:\Git\cmd;." />
+    <property name="libraries.dir.nativedirsep" value="D:\NetBeans projects\LambdaStreams\lib" />
+    <property name="libs.beans-binding.classpath" value="D:\Java\netbeans 8\java\modules\ext\beansbinding-1.2.1.jar" />
+    <property name="jar.compress" value="false" />
+    <property name="debug-transport-by-os" value="dt_shmem" />
+    <property name="libs.restlib_gfv3ee6.maven-pom" value="" />
+    <property name="java.class.path" value="D:\NetBeans projects\LambdaStreams\build\classes;D:\NetBeans projects\LambdaStreams\lib\junit_4\junit-4.10.jar;D:\NetBeans projects\LambdaStreams\build\test\classes;D:\Java\netbeans 8\extide\ant\lib\ant-launcher.jar;D:\Java\netbeans 8\extide\ant\lib\ant.jar;D:\Java\netbeans 8\extide\ant\lib\ant-junit.jar;D:\Java\netbeans 8\extide\ant\lib\ant-junit4.jar" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="libs.jaxws21.classpath" value="D:\Java\netbeans 8\ide\modules\ext\jaxb\jaxb-impl.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\jaxb-xjc.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\FastInfoset.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\gmbal-api-only.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\ha-api.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\javax.mail_1.4.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\jaxws-rt.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\jaxws-tools.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\management-api.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\mimepull.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\policy.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\saaj-impl.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\stax-ex.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\stax2-api.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\streambuffer.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\woodstox-core-asl.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\api\jaxws-api.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\api\jsr181-api.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\api\javax.annotation.jar;D:\Java\netbeans 8\java\modules\ext\jaxws22\api\saaj-api.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\activation.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\api\jaxb-api.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\api\jsr173_1.0_api.jar" />
+    <property name="work.dir" value="D:\NetBeans projects\LambdaStreams" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="netbeans.productversion" value="NetBeans IDE Dev (Build jdk8lambda-1693-on-20130328)" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.hibernate-support.javadoc" value="" />
+    <property name="test.binaryexcludes" value="" />
+    <property name="main.class" value="ro.lazcatluc.lambda.streams.Eratostene" />
+    <property name="jnlp.signing.keystore" value="" />
+    <property name="libraries.path" value="D:\NetBeans projects\LambdaStreams\lib\nblibraries.properties" />
+    <property name="netbeans.dynamic.classpath" value="D:\Java\netbeans 8\platform\core\core.jar;D:\Java\netbeans 8\platform\core\org-openide-filesystems.jar;D:\Java\netbeans 8\nb\core\org-netbeans-upgrader.jar;D:\Java\netbeans 8\nb\core\locale\core_nb.jar" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="libs.spring-framework300.maven-pom" value="" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="built-jar.properties" value="D:\NetBeans projects\LambdaStreams\build\built-jar.properties" />
+    <property name="nb.internal.action.name" value="test" />
+    <property name="do.mkdist" value="true" />
+    <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="manifest.available" value="true" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="user.variant" value="" />
+    <property name="ant.home" value="D:\Java\netbeans 8\extide\ant" />
+    <property name="netbeans.logger.console" value="true" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="libs.junit_4.displayName" value="JUnit 4.10" />
+    <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
+    <property name="sun.boot.library.path" value="D:\Java\jdk1.8.0\jre\bin" />
+    <property name="libs.spring-framework.classpath" value="D:\Java\netbeans 8\ide\modules\org-apache-commons-logging.jar;D:\Java\netbeans 8\java\modules\ext\cglib-2.2.jar;D:\Java\netbeans 8\java\modules\ext\spring\spring-2.5.6.SEC03.jar" />
+    <property name="default.javac.source" value="1.8" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="dist.dir" value="dist" />
+    <property name="manifest.file" value="manifest.mf" />
+    <property name="libs.spring-framework.maven-pom" value="" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="libs.junit.src" value="" />
+    <property name="user.language" value="en" />
+    <property name="libs.spring-framework.javadoc" value="" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="libs.eclipselink.src" value="" />
+    <property name="sun.desktop" value="windows" />
+    <property name="libs.beans-binding.javadoc" value="D:\Java\netbeans 8\java\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="excludes" value="" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="main.class.available" value="true" />
+    <property name="javadoc.preview" value="true" />
+    <property name="os.version" value="6.1" />
+    <property name="libs.jaxb.javadoc" value="D:\Java\netbeans 8\ide\docs\jaxb-api-doc.zip" />
+    <property name="javac.target" value="1.8" />
+    <property name="libs.restlib_gfv3ee6.classpath" value="D:\glassfish-3.1.2\glassfish\modules\jackson-core-asl.jar;D:\glassfish-3.1.2\glassfish\modules\jackson-jaxrs.jar;D:\glassfish-3.1.2\glassfish\modules\jackson-mapper-asl.jar;D:\glassfish-3.1.2\glassfish\modules\jersey-client.jar;D:\glassfish-3.1.2\glassfish\modules\jersey-core.jar;D:\glassfish-3.1.2\glassfish\modules\jersey-gf-server.jar;D:\glassfish-3.1.2\glassfish\modules\jersey-json.jar;D:\glassfish-3.1.2\glassfish\modules\jersey-multipart.jar;D:\glassfish-3.1.2\glassfish\modules\jettison.jar;D:\glassfish-3.1.2\glassfish\modules\mimepull.jar" />
+    <property name="javac.classpath" value="" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="libs.EclipseLink-GlassFish-v3.src" value="" />
+    <property name="libs.jpa20-persistence.classpath" value="D:\Java\netbeans 8\java\modules\ext\eclipselink\javax.persistence_2.0.108.v201302191928.jar" />
+    <property name="javac.test.processorpath" value=":build/classes:D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10.jar" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="do.archive" value="true" />
+    <property name="libs.hibernate-support.src" value="" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="javac.fork" value="false" />
+    <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="ant.core.lib" value="D:\Java\netbeans 8\extide\ant\lib\ant.jar" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="libs.jpa20-persistence.javadoc" value="" />
+    <property name="netbeans.user" value="C:\Users\Catalin\AppData\Roaming\NetBeans\dev" />
+    <property name="libs.testng.classpath" value="D:\Java\netbeans 8\platform\modules\ext\testng-6.5.1-dist.jar" />
+    <property name="libs.Comet-GlassFish-v3.classpath" value="D:\glassfish-3.1.2\glassfish\modules\grizzly-comet.jar" />
+    <property name="libs.JWSAntTasks.classpath" value="D:\Java\netbeans 8\java\ant\extra\org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="javadoc.use" value="true" />
+    <property name="jdkBug6558476" value="false" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.version" value="1.8.0-ea" />
+    <property name="libs.swing-layout.src" value="D:\Java\netbeans 8\platform\docs\swing-layout-1.0.4-src.zip" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="netbeans.home" value="D:\Java\netbeans 8\platform" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.maven-pom" value="" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="os.arch" value="amd64" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="libs.hibernate-persistencemodelgen.javadoc" value="" />
+    <property name="nb.junit.batch" value="true" />
+    <property name="user.country" value="US" />
+    <property name="path.separator" value=";" />
+    <property name="libs.junit_4.classpath" value="D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10.jar" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.hibernate-persistence.src" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.classpath" value="D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.antlr.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.asm.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.core.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.jpa.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.jpa.modelgen.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.moxy.jar;D:\glassfish-3.1.2\glassfish\modules\org.eclipse.persistence.oracle.jar;D:\glassfish-3.1.2\glassfish\modules\javax.persistence.jar" />
+    <property name="libs.javac-api.classpath" value="D:\Java\netbeans 8\java\modules\ext\nb-javac-api.jar" />
+    <property name="java.runtime.version" value="1.8.0-ea-b84" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="compile.on.save" value="true" />
+    <property name="jnlp.codebase.type" value="no.codebase" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.eclipselinkmodelgen.classpath" value="D:\Java\netbeans 8\java\modules\ext\eclipselink\eclipselink-jpa-modelgen_2.5.0.v20130312-9664d23.jar" />
+    <property name="platform.active" value="default_platform" />
+    <property name="nb.wait.for.caches" value="true" />
+    <property name="jnlp.enabled" value="false" />
+    <property name="javadoc.author" value="false" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\Catalin\AppData\Roaming\NetBeans" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="libs.Comet-GlassFish-v3.maven-pom" value="" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="libs.spring-framework.src" value="" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="do.archive+manifest.available" value="true" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
+    <property name="do.archive+main.class.available" value="true" />
+    <property name="dist.jar" value="dist/LambdaStreams.jar" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="user.properties.file" value="C:\Users\Catalin\AppData\Roaming\NetBeans\dev\build.properties" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="javac.profile" value="" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="debug.test.classpath" value=":build/classes:D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10.jar:build/test/classes" />
+    <property name="libs.testng.maven-pom" value="" />
+    <property name="javac.profile.cmd.line.arg" value="" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="libs.hibernate-persistencemodelgen.maven-pom" value="" />
+    <property name="jdk.home" value="D:\Java\jdk1.8.0" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="libs.junit_4.javadoc" value="D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10-javadoc.jar" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="javac.test.classpath" value=":build/classes:D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10.jar" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="libs.hibernate-support.maven-pom" value="" />
+    <property name="libs.hibernate-support.classpath" value="D:\Java\netbeans 8\java\modules\ext\hibernate\dom4j-1.6.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\antlr-2.7.6.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\cglib-2.2.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\commons-collections-3.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\jta-1.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-core-3.6.10.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-commons-annotations-3.2.0.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-entitymanager-3.6.10.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-tools-3.6.0.CR1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\javassist-3.12.0.GA.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\c3p0-0.9.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\oscache-2.1.jar" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="libs.junit.javadoc" value="D:/NetBeans projects/LambdaStreams/lib/junit/junit-3.8.2-api.zip" />
+    <property name="application.args" value="" />
+    <property name="run.test.classpath" value=":build/classes:D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10.jar:build/test/classes" />
+    <property name="have.sources" value="true" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="netbeans.extbrowser.manual_chrome_plugin_install" value="yes" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="libs.testng.src" value="" />
+    <property name="ap.processors.internal" value="" />
+    <property name="libs.junit_4.prop-maven-dependencies" value="junit:junit:4.10:jar" />
+    <property name="jnlp.signing" value="" />
+    <property name="libs.hibernate-persistence.javadoc" value="" />
+    <property name="java.class.version" value="52.0" />
+    <property name="do.jar" value="true" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="test.binaryincludes" value="&lt;nothing&gt;" />
+    <property name="java.ext.dirs" value="D:\Java\jdk1.8.0\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="jar.index.metainf" value="false" />
+    <property name="ant.file" value="D:\NetBeans projects\LambdaStreams\build.xml" />
+    <property name="jna.boot.library.name" value="jnidispatch-340" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
+    <property name="default.javac.target" value="1.8" />
+    <property name="testng.debug.mode" value="" />
+    <property name="do.depend" value="false" />
+    <property name="user.name" value="Catalin" />
+    <property name="plugin.manager.check.updates" value="false" />
+    <property name="have.tests" value="true" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="libs.restlib_gfv3ee6.src" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.javadoc" value="D:\NetBeans\enterprise\docs\javaee6-doc-api.zip" />
+    <property name="junit.forkmode" value="perTest" />
+    <property name="ant.file.type.LambdaStreams" value="file" />
+    <property name="libs.ejb3-persistence.javadoc" value="" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="debug.classpath" value=":build/classes" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.0 compiled on March 5 2013" />
+    <property name="empty.dir" value="D:\NetBeans projects\LambdaStreams\build\empty" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="libs.hibernate-persistencemodelgen.src" value="" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="java.home" value="D:\Java\jdk1.8.0\jre" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="libs.jpa20-persistence.src" value="" />
+    <property name="run.classpath" value=":build/classes" />
+    <property name="libs.absolutelayout.classpath" value="D:\Java\netbeans 8\java\modules\ext\AbsoluteLayout.jar" />
+    <property name="user.script" value="" />
+    <property name="javadoc.notree" value="false" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="libs.spring-framework300.javadoc" value="" />
+    <property name="libs.hibernate-persistence.classpath" value="D:\Java\netbeans 8\java\modules\ext\hibernate\antlr-2.7.6.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\cglib-2.2.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\commons-collections-3.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\dom4j-1.6.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\jta-1.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-core-3.6.10.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-commons-annotations-3.2.0.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-entitymanager-3.6.10.Final.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-tools-3.6.0.CR1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\javassist-3.12.0.GA.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\c3p0-0.9.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\oscache-2.1.jar;D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+    <property name="version-output" value="java version &quot;1.8" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="libs.CopyLibs.classpath" value="D:/NetBeans projects/LambdaStreams/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="javac.processorpath" value="" />
+    <property name="junit.available" value="true" />
+    <property name="libs.jaxb.classpath" value="D:\Java\netbeans 8\ide\modules\ext\jaxb\jaxb-impl.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\jaxb-xjc.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\jaxb1-impl.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\activation.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\api\jaxb-api.jar;D:\Java\netbeans 8\ide\modules\ext\jaxb\api\jsr173_1.0_api.jar" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="sun.boot.class.path" value="D:\Java\jdk1.8.0\jre\lib\resources.jar;D:\Java\jdk1.8.0\jre\lib\rt.jar;D:\Java\jdk1.8.0\jre\lib\sunrsasign.jar;D:\Java\jdk1.8.0\jre\lib\jsse.jar;D:\Java\jdk1.8.0\jre\lib\jce.jar;D:\Java\jdk1.8.0\jre\lib\charsets.jar;D:\Java\jdk1.8.0\jre\lib\jfr.jar;D:\Java\jdk1.8.0\jre\classes" />
+    <property name="includes" value="**" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="libs.JAXB-ENDORSED.classpath" value="D:\Java\netbeans 8\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="platforms.JDK_1.8.compiler" value="modern" />
+    <property name="jar.index" value="false" />
+    <property name="libs.junit.prop-maven-dependencies" value="junit:junit:3.8.2:jar" />
+    <property name="libs.eclipselink.javadoc" value="" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="endorsed.classpath" value="" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="libs.CopyLibs.displayName" value="CopyLibs Task" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="run.jvmargs" value="-Xms5120m -Xmx5120m -Xss256m  -XX:+UseConcMarkSweepGC" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="copylibs.rebase" value="true" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="netbeans.autoupdate.country" value="US" />
+    <property name="netbeans.hash.code" value="unique=0c2d6c53b-7cc7-4ce6-8738-ed93c7062a6b_aedab1b5-35a3-4755-87af-a986cd91595c" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="javac.compilerargs" value="" />
+    <property name="libs.CopyLibs.prop-version" value="1.0" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="ant.file.LambdaStreams" value="D:\NetBeans projects\LambdaStreams\build.xml" />
+    <property name="user.dir" value="D:\NetBeans projects\LambdaStreams" />
+    <property name="libs.ejb3-persistence.maven-pom" value="" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="ignore.failing.tests" value="true" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="libs.testng.javadoc" value="D:\Java\netbeans 8\platform\docs\testng-6.5.1-javadoc.zip" />
+    <property name="os.name" value="Windows 7" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="platforms.JDK_1.8.bootclasspath" value="D:\Java\jdk1.8.0\jre\lib\resources.jar;D:\Java\jdk1.8.0\jre\lib\rt.jar;D:\Java\jdk1.8.0\jre\lib\sunrsasign.jar;D:\Java\jdk1.8.0\jre\lib\jsse.jar;D:\Java\jdk1.8.0\jre\lib\jce.jar;D:\Java\jdk1.8.0\jre\lib\charsets.jar;D:\Java\jdk1.8.0\jre\lib\jfr.jar;D:\Java\jdk1.8.0\jre\classes;D:\Java\jdk1.8.0\jre\lib\ext\access-bridge-64.jar;D:\Java\jdk1.8.0\jre\lib\ext\cldrdata.jar;D:\Java\jdk1.8.0\jre\lib\ext\dnsns.jar;D:\Java\jdk1.8.0\jre\lib\ext\jaccess.jar;D:\Java\jdk1.8.0\jre\lib\ext\jfxrt.jar;D:\Java\jdk1.8.0\jre\lib\ext\localedata.jar;D:\Java\jdk1.8.0\jre\lib\ext\nashorn.jar;D:\Java\jdk1.8.0\jre\lib\ext\sunec.jar;D:\Java\jdk1.8.0\jre\lib\ext\sunjce_provider.jar;D:\Java\jdk1.8.0\jre\lib\ext\sunmscapi.jar;D:\Java\jdk1.8.0\jre\lib\ext\sunpkcs11.jar;D:\Java\jdk1.8.0\jre\lib\ext\zipfs.jar" />
+    <property name="libs.swing-layout.javadoc" value="D:\Java\netbeans 8\platform\docs\swing-layout-1.0.4-doc.zip" />
+    <property name="libs.junit.displayName" value="JUnit 3.8.2" />
+    <property name="jnlp.signing.alias" value="" />
+    <property name="user.timezone" value="" />
+    <property name="libs.jpa20-persistence.maven-pom" value="" />
+    <property name="jar.archive.disabled" value="false" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="libs.spring-framework300.classpath" value="D:\Java\netbeans 8\ide\modules\org-apache-commons-logging.jar;D:\Java\netbeans 8\java\modules\ext\cglib-2.2.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-aop-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-asm-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-aspects-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-beans-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-context-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-context-support-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-core-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-expression-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-instrument-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-jdbc-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-jms-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-orm-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-oxm-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-test-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-tx-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-web-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-webmvc-3.1.1.RELEASE.jar;D:\Java\netbeans 8\java\modules\ext\spring-3.0\spring-struts-3.1.1.RELEASE.jar" />
+    <property name="java.io.tmpdir" value="C:\Users\Catalin\AppData\Local\Temp\" />
+    <property name="libs.hibernate-persistencemodelgen.classpath" value="D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-jpamodelgen-1.1.1.Final.jar" />
+    <property name="java.vm.version" value="25.0-b25" />
+    <property name="libs.ejb3-persistence.classpath" value="D:\Java\netbeans 8\java\modules\ext\hibernate\hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+    <property name="libs.eclipselink.classpath" value="D:\Java\netbeans 8\java\modules\ext\eclipselink\eclipselink.jar;D:\Java\netbeans 8\java\modules\ext\eclipselink\javax.persistence_2.0.108.v201302191928.jar;D:\Java\netbeans 8\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.0.v20130312-9664d23.jar" />
+    <property name="libs.jaxws21.javadoc" value="D:\Java\netbeans 8\java\docs\jaxws-api-doc.zip" />
+    <property name="user.home" value="C:\Users\Catalin" />
+    <property name="src.dir" value="src" />
+    <property name="jnlp.descriptor" value="application" />
+    <property name="libs.swing-layout.classpath" value="D:\Java\netbeans 8\platform\modules\ext\swing-layout-1.0.4.jar" />
+    <property name="netbeans.autoupdate.language" value="en" />
+    <property name="libs.ejb3-persistence.src" value="" />
+    <property name="ant.file.type.LambdaStreams-impl" value="file" />
+    <property name="application.title" value="LambdaStreams" />
+    <property name="test.binarytestincludes" value="" />
+    <property name="mkdist.disabled" value="false" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.junit_4.src" value="D:/NetBeans projects/LambdaStreams/lib/junit_4/junit-4.10-sources.jar" />
+    <property name="libs.restlib_gfv3ee6.javadoc" value="D:\NetBeans\enterprise\docs\jsr311-api-1.1.1-javadoc.zip" />
+    <property name="libs.spring-framework300.src" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="basedir" value="D:\NetBeans projects\LambdaStreams" />
+    <property name="platforms.JDK_1.8.home" value="D:\Java\jdk1.8.0" />
+    <property name="sun.java2d.dpiaware" value="true" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="libraries.basename" value="nblibraries" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="run.jvmargs.ide" value="" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="netbeans.automatic.build" value="true" />
+    <property name="libraries.dir" value="D:/NetBeans projects/LambdaStreams/lib" />
+    <property name="javac.debug" value="true" />
+    <property name="libs.PostgreSQLDriver.classpath" value="D:\Java\netbeans 8\ide\modules\ext\postgresql-9.2-1002.jdbc4.jar" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="test.src.dir" value="test" />
+    <property name="debug-transport" value="dt_shmem" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="ant.project.name" value="LambdaStreams" />
+  </properties>
+  <testcase classname="ro.lazcatluc.lambda.streams.IStreamTest" name="testSplitter" time="0.057" />
+  <testcase classname="ro.lazcatluc.lambda.streams.IStreamTest" name="testEvery" time="0.002" />
+  <testcase classname="ro.lazcatluc.lambda.streams.IStreamTest" name="testSkip" time="0.0" />
+  <testcase classname="ro.lazcatluc.lambda.streams.IStreamTest" name="testFilter" time="0.005" />
+  <testcase classname="ro.lazcatluc.lambda.streams.IStreamTest" name="testMap" time="0.004" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
