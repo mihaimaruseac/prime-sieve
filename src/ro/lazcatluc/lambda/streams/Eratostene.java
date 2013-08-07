@@ -65,6 +65,24 @@ public class Eratostene {
                     }
                 });
     }
+    
+    public static IStream<Long> eratostene() {
+        IStream<Long> naturals = nat();
+        return new LazyListStream<>(list -> {
+            Long head = naturals.next();
+            for (Long prime : list) {
+                if (head % prime == 0) {
+                    return;
+                }
+                assert prime * prime > 0;
+                if (prime * prime > head) {
+                    list.add(head);
+                    return;
+                }
+            }
+            list.add(head);
+        });
+    }
 
     /**
      * Computes the stream of prime numbers in the following way:
@@ -76,7 +94,7 @@ public class Eratostene {
      *
      * @return the stream of prime numbers
      */
-    public static IStream<Long> eratostene() {
+    public static IStream<Long> eratosteneMultiples() {
 
         return new IStream<Long>() {
             Long root = 2l;
@@ -168,8 +186,8 @@ public class Eratostene {
     static void analyzeEratostene() {
         long start = System.currentTimeMillis();
         final int step = 10000;
-        IStream<Long> eratostene = eratostene().skip(step - 1).every(step);
-        for (int i = 1; i <= 5000; i++) {
+        IStream<Long> eratostene = eratostene().skip(step).every(step);
+        for (long i = 1; i <= 500000; i++) {
             System.out.println("The " + (i * step) + "th prime number is " +
                     eratostene.root() + " obtained in " +
                     ((System.currentTimeMillis() - start) / 1000) + "s");
