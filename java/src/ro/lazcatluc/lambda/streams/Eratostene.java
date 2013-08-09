@@ -223,7 +223,7 @@ public class Eratostene {
     static void analyzeEratostene() {
         long start = System.currentTimeMillis();
         final int step = 10000;
-        IStream<Long> eratostene = eratostene().skip(step).every(step);
+        IStream<Long> eratostene = eratostene().skip(step-1).every(step);
         for (long i = 1; i <= 500000; i++) {
             System.out.println("The " + (i * step) + "th prime number is " +
                     eratostene.root() + " obtained in " +
