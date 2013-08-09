@@ -167,8 +167,9 @@ public interface IStream<T> extends Iterator<T> {
 	default IStream<T> every(final int step) {
 		final Supplier<T> origRoot = () -> root();
 		final Supplier<T> origNext = () -> next();
+        final IStream<T> original = this;
 		return new IStream<T>() {
-			T root = origRoot.get();
+			private T root = origRoot.get();
 			
 			@Override
 			public T root() {
@@ -183,8 +184,20 @@ public interface IStream<T> extends Iterator<T> {
 				return root();
 			}
 			
+            @Override
+            public IStream<T> original() {
+                return original;
+            }
 		};
 	}
+    
+    /**
+     * 
+     * @return the stream from which this stream has originated
+     */
+    default IStream<T> original() {
+        return null;
+    }
 	
     /**
      * Clones the stream into two separate streams so that

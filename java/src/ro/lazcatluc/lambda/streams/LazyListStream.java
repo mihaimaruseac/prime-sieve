@@ -6,6 +6,7 @@ package ro.lazcatluc.lambda.streams;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -13,7 +14,7 @@ import java.util.function.Consumer;
  *
  * @author Catalin
  */
-public final class LazyListStream<T> implements IStream<T> {
+public final class LazyListStream<T> implements IStream<T>, Iterable<T> {
 
     /**
      * The list backing this stream
@@ -22,6 +23,7 @@ public final class LazyListStream<T> implements IStream<T> {
     /**
      * The current position in the stream
      */
+    
     private int currentPosition = 0;
     
     /**
@@ -32,7 +34,7 @@ public final class LazyListStream<T> implements IStream<T> {
     private final Consumer<List<T>> computeNext;
 
     public LazyListStream(Consumer<List<T>> computeNext) {
-        streamQueue = new ArrayList<>();
+        streamQueue = Collections.synchronizedList(new ArrayList<>());
         this.computeNext = computeNext;
     }
 
@@ -74,5 +76,10 @@ public final class LazyListStream<T> implements IStream<T> {
 
     void reset() {
         currentPosition = 0;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return streamQueue.listIterator();
     }
 }
