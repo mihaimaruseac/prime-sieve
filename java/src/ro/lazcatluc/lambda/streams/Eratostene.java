@@ -66,7 +66,7 @@ public class Eratostene {
                 });
     }
     
-    public static IStream<Long> eratostene() {
+    public static LazyListStream<Long> eratosteneWithSave() {
         IStream<Long> naturals = nat();
         return new LazyListStream<>(list -> {
             Long head = naturals.next();
@@ -82,6 +82,43 @@ public class Eratostene {
             }
             list.add(head);
         });
+    }
+    
+    public static IStream<Long> eratostene() {
+        LazyListStream<Long> savedPrimes = eratosteneWithSave();
+        return new IStream<Long>() {
+
+            private final IStream<Long> naturals = nat().skip(1);
+
+            @Override
+            public Long root() {
+                return naturals.root();
+            }
+
+            @Override
+            public boolean hasNext() {
+                return true;
+            }
+
+            @Override
+            public Long next() {
+                iterateNaturals:
+                while(true) {
+                    Long head = naturals.next();
+                    savedPrimes.reset();
+                    while (true) {
+                        Long prime = savedPrimes.next();
+                        if (head % prime == 0) {
+                            continue iterateNaturals;
+                        }
+                        assert prime * prime > 0;
+                        if (prime * prime > head) {
+                            return head;
+                        }
+                    }
+                }
+            }
+        };
     }
 
     /**

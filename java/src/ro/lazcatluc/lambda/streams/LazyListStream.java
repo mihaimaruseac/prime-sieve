@@ -71,4 +71,8 @@ public final class LazyListStream<T> implements IStream<T> {
     public void remove() {
         currentPosition++;
     }
+
+    void reset() {
+        currentPosition = 0;
+    }
 }
